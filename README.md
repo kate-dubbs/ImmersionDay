@@ -17,7 +17,7 @@ This repository will walk you through mutliple Amazon SageMaker labs. These labs
 Before we dive into the mechanics this workshop, let's launch our first SageMaker notebook and explore some lifecycle configurations we can apply to our notebook. All of these steps can be automated through CloudFormation.
 
 Follow these steps to launch a SageMaker Notebook Instance, download and explore the dataset:
-1. Open Amazon SageMaker Console, navigate to ‘Notebook instances‘ under ‘Notebook‘ menu and click on ‘Create notebook instance’. Choose a name for your Notebook instance. For the instance type, leave the default ‘ml.t2.medium’ since our example dataset is small and you won’t use GPUs for running training/inference locally.
+1. Open Amazon SageMaker Console, navigate to ‘Notebook instances‘ under ‘Notebook‘ menu and click on ‘Create notebook instance’. Choose a name for your Notebook instance. For the instance type, leave the default ‘ml.m4.xlarge’ since our example dataset is small and you won’t use GPUs for running training/inference locally.
 For the IAM role, select ‘Create a new role’ and select the options shown below for the role configuration.
  
 
@@ -25,7 +25,7 @@ Click ‘Create role’ to create a new role and then hit ‘Create notebook ins
 
 ![alt text](https://github.com/kate-dubbs/ImmersionDay/blob/master/images/img1.png "Creating a notebook instance")
 
-2. SageMaker Notebooks have feature that allows you to optionally sync the content with a Github repository (ADD GIT REPO FOR LAB). Since you'll be using Notebook file and other files from this repository throughout this workshop, add the URL of this repository to have this cloned onto your instance, upon creation.
+2. SageMaker Notebooks have feature that allows you to optionally sync the content with a Github repository (https://github.com/kate-dubbs/ImmersionDay/). Since you'll be using Notebook file and other files from this repository throughout this workshop, add the URL of this repository to have this cloned onto your instance, upon creation.
 
 ![alt text](https://github.com/kate-dubbs/ImmersionDay/blob/master/images/img2.png "Cloning GitHub Repository")
 
@@ -42,8 +42,8 @@ Lifecycle configuration, attach the configuration to your notebook, before start
 #!/bin/bash
 set -e
 cd /home/ec2-user/SageMaker
-git clone ADD GIT REPO URL
-sudo chown ec2-user:ec2-user -R ADD FOLDER!/
+git clone https://github.com/kate-dubbs/ImmersionDay
+sudo chown ec2-user:ec2-user -R ImmersionDay/
 ```
 
 ![alt text](https://github.com/kate-dubbs/ImmersionDay/blob/master/images/img4.png "Notebook Configuration")	 
@@ -85,11 +85,11 @@ Random forests has a variety of applications, such as recommendation engines, im
 
 Running the notebooks
 1.	Access the SageMaker notebook instance you created earlier. Open the **SageMaker Examples** tab.
-2.	In the **SageMaker Python SDK** section locate the **SKlearn_on_SageMaker_end2end.ipynb** notebook and create a copy by clicking on **Use**.
+2.	In the **SageMaker Python Sdk** section locate the **Sklearn_on_SageMaker_end2end.ipynb** notebook and create a copy by clicking on **Use**.
 3.	You are now ready to begin the notebook.
 4.	Follow the directions in the notebook. The notebook will walk you through the data preparation, training, hosting, and validating the model with Amazon SageMaker. Once completed, return from the notebook to these instructions.
 5.	Once the BYOA notebook is completed, open the **SageMaker Home** tab.
-6.	Click on the **SKLearn_Container_RF.ipynb** 
+6.	Click on the **ImmersionDay/Container Lab folder** and then the **Sklearn_Container_RF.ipynb** 
 7.	Follow the directions in the notebook. The notebook will walk you through building a container for training, hosting, and validating the model with Amazon SageMaker. 
 
 ## Lab 4
