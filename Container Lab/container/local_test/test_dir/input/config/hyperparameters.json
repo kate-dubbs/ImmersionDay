@@ -1,0 +1,4 @@
+{"n-estimators": 100,
+"min-samples-leaf": 3,
+"features": "CRIM ZN INDUS CHAS NOX RM AGE DIS RAD TAX PTRATIO B LSTAT",
+"target": "target"}
