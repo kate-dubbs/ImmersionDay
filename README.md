@@ -23,11 +23,11 @@ For the IAM role, select ‘Create a new role’ and select the options shown be
 
 Click ‘Create role’ to create a new role and then hit ‘Create notebook instance’ to submit the request for a new notebook instance.
 
-![alt text](https://github.com/UPDATE/images/img1.png "Creating a notebook instance")
+![alt text](https://github.com/kate-dubbs/ImmersionDay/blob/master/images/img1.png "Creating a notebook instance")
 
 2. SageMaker Notebooks have feature that allows you to optionally sync the content with a Github repository (ADD GIT REPO FOR LAB). Since you'll be using Notebook file and other files from this repository throughout this workshop, add the URL of this repository to have this cloned onto your instance, upon creation.
 
-![alt text](https://github.com/UPDATE/images/img2.png "Cloning GitHub Repository")
+![alt text](https://github.com/kate-dubbs/ImmersionDay/blob/master/images/img2.png "Cloning GitHub Repository")
 
  
 Note: It usually takes a few minutes for the notebook instance to become available. Once available, the status of the notebook instance will change from ‘Pending’ to ‘InService’. You can then follow the link to open the Jupyter console on this instance and move on to the next steps.
@@ -36,7 +36,7 @@ Note: It usually takes a few minutes for the notebook instance to become availab
 Assuming your Notebook instance is in stopped state, add the following code into a new 
 Lifecycle configuration, attach the configuration to your notebook, before starting the instance. 
 
-![alt text](https://github.com/UPDATE/images/img3.png "Creating Lifecycle Configuration")
+![alt text](https://github.com/kate-dubbs/ImmersionDay/blob/master/images/img3.png "Creating Lifecycle Configuration")
  
 ```
 #!/bin/bash
@@ -46,7 +46,7 @@ git clone ADD GIT REPO URL
 sudo chown ec2-user:ec2-user -R ADD FOLDER!/
 ```
 
-![alt text](https://github.com/UPDATE/images/img4.png "Notebook Configuration")	 
+![alt text](https://github.com/kate-dubbs/ImmersionDay/blob/master/images/img4.png "Notebook Configuration")	 
 
 With the config attached, when your Notebook instance starts, it will automatically clone this repository.
 
