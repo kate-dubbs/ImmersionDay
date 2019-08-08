@@ -1,6 +1,6 @@
 # Immersion Day Lab Guide
 
-This repository will walk you through mutliple Amazon SageMaker labs. These labs are meant to give you a basic overview of Amazon SageMaker and will primarily leverage example notebooks. More advance discussions on how to implement these features will be addressed later in the day during the whiteboarding and experimentation session. The goal of this immersion day is to provide the foundational knowledge on how to use the key features of Amazon SageMake and begin to understand how Amazon SageMake can be leveraged to accelerate the process of building and deploying machine learning models. 
+This repository will walk you through mutliple Amazon SageMaker labs. These labs are meant to give you a basic overview of Amazon SageMaker and will primarily leverage example notebooks. More advance discussions on how to implement these features will be addressed later in the day during the whiteboarding and experimentation session. The goal of this immersion day is to provide the foundational knowledge on how to use the key features of Amazon SageMaker and begin to understand how Amazon SageMaker can be leveraged to accelerate the process of building and deploying machine learning models. 
 
 #### Table of Contents
 [Lab 1: Amazon SageMaker Notebook Instance Lifecycle Configuration](#lab-1)
